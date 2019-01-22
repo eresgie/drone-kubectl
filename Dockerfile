@@ -1,6 +1,7 @@
 FROM alpine:3.8
 LABEL name="drone-kubectl-plugin"
-LABEL maintainer="eresgie@gmail.com"
+LABEL maintainer="eresgie <eresgie@gmail.com>"
+LABEL version=1
 
 ENV KUBECTL_VERSION="v1.13.2"
 
@@ -19,4 +20,4 @@ RUN \
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
-CMD ["/run.sh"]
+CMD [ "/run.sh" ]
