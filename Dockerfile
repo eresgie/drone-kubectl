@@ -7,7 +7,7 @@ ENV KUBECTL_VERSION="v1.13.2"
 
 RUN \
   apk add --update ca-certificates && \
-  apk add -t deps curl && \
+  apk add -t deps curl bash && \
   apk add bash
 
 RUN \
