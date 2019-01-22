@@ -25,5 +25,5 @@ kubectl config set-context default --cluster=default --user=default
 kubectl config use-context default
 
 if [[ -n ${PLUGIN_EXECUTE} ]]; then
-  kubectl "${PLUGIN_EXECUTE}"
+  "${PLUGIN_EXECUTE}"
 fi
